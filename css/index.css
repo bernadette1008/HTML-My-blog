@@ -1,0 +1,134 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'SuncheonB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/SuncheonB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header{
+    background-color: white;
+    text-align: center;
+    width:100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+header > img{
+    position: absolute;
+    top: 7px;
+    z-index: 0;
+}
+header > div{
+    z-index: 1;
+}
+
+section{
+    /* background-color: white; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    background-color: white;
+    width: 1600px;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    font-family: 'SuncheonB';
+}
+
+
+
+/* 메인박스 */
+
+.mainBox{
+    float: left;
+    background-color: white;
+    width: 1300px;
+    height: 100%;
+    margin: 0px;
+    padding: 100px 0px;
+}
+
+.mainBox a:hover{
+    transform: scale(1.02);
+}
+
+.page1{
+    display: inline-block;
+    width: 1300px;
+    height: 200px;
+    padding: 10px;
+    border-top: 1px dotted rgb(170, 170, 170);
+    border-bottom: 1px dotted rgb(170, 170, 170);
+}
+
+.page2{
+    display: inline-block;
+    width: 1300px;
+    height: 200px;
+    padding: 10px;
+    border-bottom: 1px dotted rgb(170, 170, 170);
+}
+
+.page3{
+    display: inline-block;
+    width: 1300px;
+    height: 200px;
+    padding: 10px;
+    border-bottom: 1px dotted rgb(170, 170, 170);
+}
+
+.mainBox div{
+    font-weight:bold;
+}
+
+
+
+
+/* 서브박스 */
+
+.subBox{
+    float: right;
+    background-color: white;
+    width: 250px;
+    height: 100%;
+    padding: 0px 20px;
+    font-family: 'SuncheonB';
+}
+
+.list{
+    margin-top: 100px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.list summary{
+    text-indent: 1em;
+    padding: 10px 0px;
+}
+
+.list li{
+    list-style-type: none;
+}
+
+.list li:hover{
+    text-decoration: underline;
+    transform:scale(1.1);   
+}
